@@ -84,3 +84,14 @@ button:hover {
   color: #b3261e;
   font-size: 14px;
 }
+
+.success {
+  min-height: 24px;
+  margin: 12px 0 0;
+  color: #137333;
+  font-size: 14px;
+}
+
+[hidden] {
+  display: none !important;
+}

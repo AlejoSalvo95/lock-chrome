@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Profile Lock",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Bloquea la navegación web de este perfil de Chrome hasta ingresar una contraseña.",
   "permissions": [
     "declarativeNetRequest",
@@ -13,5 +13,6 @@
   ],
   "background": {
     "service_worker": "background.js"
-  }
+  },
+  "options_page": "options.html"
 }

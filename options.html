@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cambiar contraseña</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card">
+    <div class="lock-icon" aria-hidden="true">🔑</div>
+    <h1>Cambiar contraseña</h1>
+    <p>La nueva contraseña se guardará localmente como un hash.</p>
+    <form id="passwordForm">
+      <label for="currentPassword">Contraseña actual</label>
+      <input id="currentPassword" type="password" autocomplete="current-password" required />
+      <label for="newPassword">Nueva contraseña</label>
+      <input id="newPassword" type="password" autocomplete="new-password" minlength="6" required />
+      <label for="confirmPassword">Repetí la nueva contraseña</label>
+      <input id="confirmPassword" type="password" autocomplete="new-password" minlength="6" required />
+      <button type="submit">Cambiar contraseña</button>
+      <p id="message" class="error" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+  <script src="options.js"></script>
+</body>
+</html>
